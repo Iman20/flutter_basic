@@ -1,7 +1,3 @@
-import 'package:basic_flutter/animate_page.dart';
-import 'package:basic_flutter/counting_page.dart';
-import 'package:basic_flutter/drawing_page.dart';
-import 'package:basic_flutter/toggle_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget{
@@ -28,28 +24,35 @@ class HomeState extends State<HomePage>{
           RaisedButton(
             child: Text('Counter Page'),
             onPressed: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => CounterPage(title: widget.title,)));
+              Navigator.of(context).pushNamed('/count');
             },
           ),
           Padding(padding: EdgeInsets.only(top: 16.0,)),
           RaisedButton(
             child: Text('Toggle Page'),
             onPressed: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => TogglePage(title: widget.title,)));
+              Navigator.of(context).pushNamed('/toggl');
             },
           ),
           Padding(padding: EdgeInsets.only(top: 16.0,)),
           RaisedButton(
             child: Text('Animation Page'),
             onPressed: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => AnimatePage(title: widget.title,)));
+              Navigator.of(context).pushNamed('/anima');
             },
           ),
           Padding(padding: EdgeInsets.only(top: 16.0,)),
           RaisedButton(
             child: Text('Drawing Page'),
             onPressed: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => DrawingPage(title: widget.title,)));
+              Navigator.of(context).pushNamed('/drawi');
+            },
+          ),
+          Padding(padding: EdgeInsets.only(top: 16.0,)),
+          RaisedButton(
+            child: Text('Async Page'),
+            onPressed: (){
+              Navigator.of(context).pushNamed('/asin');
             },
           ),
         ],),
