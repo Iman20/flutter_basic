@@ -50,9 +50,23 @@ class HomeState extends State<HomePage>{
           ),
           Padding(padding: EdgeInsets.only(top: 16.0,)),
           RaisedButton(
-            child: Text('Async Page'),
+            child: Text('Async Task Page'),
             onPressed: (){
               Navigator.of(context).pushNamed('/asin');
+            },
+          ),
+          Padding(padding: EdgeInsets.only(top: 16.0,)),
+          RaisedButton(
+            child: Text('Background Task Page'),
+            onPressed: (){
+              Navigator.of(context).pushNamed('/back');
+            },
+          ),
+          Padding(padding: EdgeInsets.only(top: 16.0,)),
+          RaisedButton(
+            child: Text('Database Page'),
+            onPressed: (){
+              Navigator.of(context).pushNamed('/database');
             },
           ),
         ],),

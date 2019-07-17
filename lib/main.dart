@@ -1,6 +1,8 @@
 import 'package:basic_flutter/pages/animate_page.dart';
 import 'package:basic_flutter/pages/async_page.dart';
+import 'package:basic_flutter/pages/background_task_page.dart';
 import 'package:basic_flutter/pages/counting_page.dart';
+import 'package:basic_flutter/pages/database_page.dart';
 import 'package:basic_flutter/pages/drawing_page.dart';
 import 'package:basic_flutter/pages/home_page.dart';
 import 'package:basic_flutter/pages/toggle_page.dart';
@@ -13,7 +15,9 @@ final routes = <String, WidgetBuilder>{
   '/toggl' : (BuildContext context) => TogglePage(title: 'Toggle Page',),
   '/anima' : (BuildContext context) => AnimatePage(title: 'Animate Page',),
   '/drawi' : (BuildContext context) => DrawingPage(title: 'Drawing Page',),
-  '/asin' : (BuildContext context) => AsyncPage(title: 'Async Page',),
+  '/asin' : (BuildContext context) => AsyncPage(title: 'Async Task Page',),
+  '/back' : (BuildContext context) => BackgroundTaskPage(title: 'Background Task Page',),
+  '/database' : (BuildContext context) => DatabaseTask(title: 'Database Page',),
 };
 
 class MyApp extends StatelessWidget {
